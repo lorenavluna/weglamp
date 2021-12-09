@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head') %> 
+    <link rel="stylesheet" href="/css/productDetail.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+      <%- include('../partials/header') %> 
+        
+    
+    </header>
+    <main>
+      
+
+        <nav class="main-nav-bar"> 
+            <h3>Buscá tu paquete</h3>
+            <nav class="barradebusqueda">
+              <form action="/booking/productSearch" method="GET">
+                
+                  <select name="destino" id="destino">
+                    <% destinations.forEach(destination => { %>
+                      <option value="<%= destination.id  %>"> <%= destination.destinationsName  %> </option>
+                   <% }) %>
+             </select>
+               <p id="resultado"></p>
+
+                  <input type="date" name="checkinDate">
+                  <input type="date" name="checkoutDate">
+                  
+              <i class="fas fa-search" id="search"><button type="submit">
+                Buscar</button></i> 
+               
+              </form>
+             <!-- <script  src ="\js\search-bar.js"></script>-->
+              
+                  
+          </nav>     
+           
+            <nav class="sindecidir">
+                <div class="switch_container">
+                    <label class="form-switch">
+                        <input type="checkbox"> <i></i>No he decidido las fechas</label>
+                    </div>
+            </nav>
+              
+            </nav>
+    
+        </nav> 
+      
+
+
+      <section class="information">
+      <article class="selectTent"></article>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <h4>Domo STANDARD</h4>
+            <IMG src="https://www.ecocamp.travel/hubfs/Standard%20Dome%20EcoCamp%20Patagonia%201920x1281_960.webp" width="150px">
+               
+                    <form action="/booking/productDetail" method="POST">
+                        <label for="destination" name="destination">Destino</label>
+                           <select name="destination" id="destination">
+                                <option value="patagonia">Patagonia</option>
+                                <option value="lobos">Lobos</option>
+                                <option value="tigre">Tigre</option>
+                            </select>
+                            </form>
+                
+               
+               
+              <form action="/booking/productDetail" method="POST">
+                <label for="pax" name="pax">cantidad de pax</label>
+                <select name="Pax" id="pax">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                 </select>
+                 <br>
+                
+                 <button type="button" class="btn btn-secondary"><a href="/booking/productList/">Descripcion</a> </button>
+                 <br>
+                 
+            </form>
+          </div>
+
+          <div class="col-sm">
+            <h4>Domo  SUPERIOR</h4>
+            <IMG src="https://www.ecocamp.travel/hubfs/Superior%20Dome%20Interior_960.webp" width="150px"> 
+              <form action="/booking/productDetail" method="POST">
+                  <label for="destination" name= "destination">Destino</label>
+  
+                     <select name="destination" id="destination">
+                          <option value="2">Patagonia</option>
+                          <option value="3">Lobos</option>
+                          <option value="1">Tigre</option>
+                      </select>
+                      </form>
+          <form action="/booking/productDetail" method="POST">
+          <label for="pax" name="pax">cantidad de pax</label>
+          <select name="Pax" id="pax">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+           </select>
+           <br>
+           <button type="button" class="btn btn-secondary"><a href="/booking/productList/">Descripcion</a> </button>
+           <br>
+        
+              
+      </form>
+          </div>
+
+          <div class="col-sm">
+            <h4>Suite DOME</h4>
+                <IMG src="https://www.ecocamp.travel/hubfs/Suite%20Dome%20EcoCamp%20Patagonia%201920x1281%20(1)_960.webp"width="150px">
+                
+                  <form action="/booking/productDetail" method="POST">
+                      <label for="destination" name="destination">Destino</label>
+                       <select name="destination" id="destination">
+                              <option value="patagonia">Patagonia</option>
+                              <option value="lobos">Lobos</option>
+                              <option value="tigre">Tigre</option>
+                          </select>
+                          
+                          </form>
+             
+            <form action="/booking/productDetail" method="POST">
+              <label for="pax" name="pax">cantidad de pax</label>
+              <select name="Pax" id="pax">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+               </select>
+               <br>
+               <button type="button" class="btn btn-secondary"><a href="/booking/productList/">Descripcion</a> </button>
+               <br>
+              
+          </form>
+          </div>
+        </div>
+      </div>
+      
+         
+      
+        </section>
+
+        
+    </main>
+    <footer> <%- include('../partials/footer') %></footer>
+</body>
+</html>

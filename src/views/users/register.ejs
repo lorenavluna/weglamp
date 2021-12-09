@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/register.css">
+    <script src="https://kit.fontawesome.com/ede0f8a666.js" crossorigin="anonymous"></script>
+    <script src="/js/form-validation-user-register.js"></script>
+    
+    <title>Register</title>
+
+</head>
+    <body>
+        <main>
+        <div class="modal-container" id="modal-container">
+            
+            <div class="modal">
+
+            <section class="izquierda">
+                <h1>Registrarme </h1>
+            <section class="usuario_crear">
+                <h2 class="nuevo">Ya es usuario?</h2>
+                <a href="/user/login" class="crear">Ingresar</a>
+            </section>
+            
+            <form action="/user/register" method="POST" enctype="multipart/form-data">
+                <input type="text" name="nombre" id="nombre" class="campo_nombre"  placeholder="Nombre"
+                class="<%= (locals.errors && errors.nombre) ? 'input-error' : '' %>" value="<%= locals.oldValues && oldValues.nombre %>"/>
+                    
+                    <% if (locals.errors && errors.nombre) { %>
+                        <p><%= errors.nombre.msg %></p>
+                    <% } %>
+                 
+
+                <p></p>
+
+                <div class="msg-error-name"></div>
+
+                <input type="text" name="apellido" id="apellido" class="campo_apellido" placeholder="Apellido"
+                class="<%= (locals.errors && errors.apellido) ? 'input-error' : '' %>" value="<%= locals.oldValues && oldValues.apellido %>"/>
+                    
+                <% if (locals.errors && errors.apellido) { %>
+                    <p><%= errors.apellido.msg %></p>
+                <% } %> 
+                <p></p>
+
+                <div class="msg-error-surname"></div>
+
+                <input type="text" name="email" id="email" class="campo_correo"  placeholder="email" 
+                class="<%= (locals.errors && errors.email) ? 'input-error' : '' %>" value="<%= locals.oldValues && oldValues.email %>"/>
+                    
+                <% if (locals.errors && errors.email) { %>
+                    <p><%= errors.email.msg %></p>
+                <% } %>
+                <p></p>
+
+                <div class="msg-error-email"></div>
+
+                <input type="text" name="password" id="password" class="campo_contrasena"  placeholder="Contraseña" 
+                class="<%= (locals.errors && errors.password) ? 'input-error' : '' %>" value="<%= locals.oldValues && oldValues.password %>"/>
+                    
+                <% if (locals.errors && errors.password) { %>
+                    <p><%= errors.password.msg %></p>
+                <% } %>
+                <p></p>
+
+                <div class="msg-error-password"></div>
+
+                <input type="file" name="image" id="image" value="image" class="campo_contrasena" />
+                <div>
+                  
+                    <% if (locals.errors && errors.image) { %>
+                        <p><%= errors.image.msg %></p>
+                    <% } %>
+
+                </div>
+                <p></p>
+
+                <div class="msg-error-image"></div>
+
+                <button type="submit" class="ingresar" value="Registrar Domo"> Registrar </button> 
+                <p></p>
+                 <label><input type="checkbox" class="mantenerme_logueado"> Mantenerme logueado</label>
+
+            </form>
+           
+            <section class="ingreso_alternativo">
+                <hr> <h3>o registrarme</h3> <hr>
+            </section>
+            <section class="redes">
+                <i class="fab fa-google" class="icon_login"></i>
+                <i class="fab fa-facebook" class="icon_login"></i>
+                <i class="fab fa-linkedin" class="icon_login"></i>
+                <i class="fab fa-twitter-square" class="icon_login"></i>
+            </section>
+            </section>
+
+            <section class="derecha_arriba">
+                <div class="cruz">
+                <a href="/"><i class="far fa-times-circle"></i></a>
+                </div>
+            </section>
+
+            <section class="derecho_abajo">
+                <img src="/images/weglamp-vert.png" alt="foto" class="imagen">
+            </section>
+        </div>
+        <script src ="\js\form-validation-user-register.js">
+
+        </script>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,8 @@
+
+<div>
+    <% if (locals.logged) { %>
+       <%- include('nav-auth') %> 
+    <% } else {%>
+       <%- include('nav-guest') %> 
+   <% }%>
+</div>

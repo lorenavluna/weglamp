@@ -1,0 +1,118 @@
+[
+  {
+    "nombre": "lorena",
+    "apellido": "luna",
+    "email": "lorenavluna@gmail.com",
+    "password": "lorena",
+    "id": null
+  },
+  {
+    "nombre": "lorena",
+    "apellido": "luna",
+    "email": "lorenavluna@gmail.com",
+    "password": "lorena",
+    "id": 1
+  },
+  {
+    "nombre": "horacio",
+    "apellido": "vega",
+    "email": "hove003@gmail.com",
+    "password": "$2a$10$tshmoIQdVFOSYu9aoBszS.AJKLFzbtI.9SXFW7CvJBHbZo6xhBxJW",
+    "id": 2
+  },
+  {
+    "nombre": "horacio",
+    "apellido": "vega",
+    "email": "lorenavluna@hotmail.com",
+    "password": "$2a$10$0ZJfGB1t/PjhGOW.IQ.oY.BeHwS4lFXGwae9gPAvl2KdNwv5JtO.G",
+    "id": 3
+  },
+  {
+    "nombre": "horacio",
+    "apellido": "vega",
+    "email": "lorenavluna@hotmail.com",
+    "password": "$2a$10$p8ILrc0KOX0ullc7mbrPaOsmPUG4xcnRh6MwkHBMqwC7rf/zz/qs2",
+    "image": "weglamp.png",
+    "id": 4
+  },
+  {
+    "nombre": "carlos",
+    "apellido": "vega",
+    "email": "hove003@gmail.com",
+    "password": "$2a$10$DgzqxCPzF0f.Epvs6uTy4.6MsIxv4OZYIt6USxzKaWvGb3lEWiEKG",
+    "image": "IMG_2662.jpeg",
+    "id": 5
+  },
+  {
+    "nombre": "horacio",
+    "apellido": "marks",
+    "email": "veronoca@veronica.com",
+    "password": "$2a$10$T1UcTuuQN/zypGUyf1nG1uOjhON7Xi7.o7YRWxFmTsGrSi0uoVCQa",
+    "image": "/images/users/1625021569835.jpg",
+    "id": 6
+  },
+  {
+    "nombre": "catalina",
+    "apellido": "vega",
+    "email": "catalina@catalina.com",
+    "password": "$2a$10$TAp/8ALIHcjTViWI9YDUM.LRJsfvtzmkZksTiBRWGkDaeS7H6H7hO",
+    "image": "/images/users/1625021745157.png",
+    "id": 7
+  },
+  {
+    "nombre": "pepe",
+    "apellido": "gomez",
+    "email": "pepe@gomez.com",
+    "password": "$2a$10$Za3lx7wwc8hljG9MZXD2cusMkuE3FYCCBcCbWQmLguRlTH5nuSHH2",
+    "image": "/images/users/1625104898103.png",
+    "id": 8
+  },
+  {
+    "nombre": "guadalupe",
+    "apellido": "vega",
+    "email": "guadalupe@gmail.com",
+    "password": "$2a$10$YBPfEObhoF3c1HuvvcJIi.hE2VzxmB/SaJkbqIOsbcJB6XSlpMNjO",
+    "image": "/images/users/1625162348336.png",
+    "id": 9
+  },
+  {
+    "nombre": "pepe",
+    "apellido": "garcia",
+    "email": "pepe@garcia.com",
+    "password": "$2a$10$1Gf7DAanjoBVx.AKBr6fFegdU4VRGiCyxBBiVS/E4LAVkEzE4FxxG",
+    "image": "/images/users/1625165622518.png",
+    "id": 10
+  },
+  {
+    "nombre": "pepe",
+    "apellido": "garcia",
+    "email": "pepe@garciia.com",
+    "password": "$2a$10$bHKDBw/opKzpdfDhpEclXuf44XxP3Q/9LYzPNqJPP18vrr9.CvX/C",
+    "image": "/images/users/1625165926200.jpg",
+    "id": 11
+  },
+  {
+    "nombre": "lorena",
+    "apellido": "luna",
+    "email": "lorenavluna@lorena.com",
+    "password": "$2a$10$aCbIm..m2K.iFU5yCNRwe.iqVOkTygUD0aSuvL7chOqAXoo7cZUAe",
+    "image": "/images/users/1625786719032.jpeg",
+    "id": 12
+  },
+  {
+    "nombre": "asdaa",
+    "apellido": "asdaa",
+    "email": "asdaa@asdaa.com",
+    "password": "$2a$10$uZL4GgB05DwAPyE13PRsB.sjqq1FgqN4cCE1hXU374hPmllq67O9W",
+    "image": "/images/users/1626410825476.jpg",
+    "id": 13
+  },
+  {
+    "nombre": "alfonso",
+    "apellido": "PASTOR",
+    "email": "a@hotmail.com",
+    "password": "$2a$10$.gptyRg1peS9OZhKQw4tJuuhETdc6MzB4480FElajXzb35SB2DLkO",
+    "image": "/images/users/1628279179377.JPG",
+    "id": 14
+  }
+]

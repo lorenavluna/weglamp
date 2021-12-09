@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Hay que cambiar este head para que tome el del partial -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <script src="https://kit.fontawesome.com/ede0f8a666.js" crossorigin="anonymous"></script>
+    <script src="/js/form-validation-new-dome.js"></script>
+    <title>new</title>
+</head>
+<body>
+       
+        <div class="modal-container" id="modal-container"></div>
+            
+            <div class="modal">
+
+            <section class="izquierda">
+                <h1>Registra tu Domo</h1>
+            <section class="usuario_crear">
+                <h2 class="nuevo">Usuario nuevo?</h2>
+                <a href="/user/register" class="crear">Crear una cuenta</a>
+            </section>
+
+            <form action="/booking/new" method="POST" enctype="multipart/form-data">
+                <select name="destination" id="destination" class="campo_ubicacion"  placeholder="Ubicacion" >
+                   
+                  
+                 <% destinations.forEach(destination => { %>
+                    <option value="<%= destination.id  %>"> <%= destination.destinationsName  %> </option>
+                 <% }) %>
+                </select>
+                
+                <p></p>
+                <div class="msg-error-destination"></div>
+
+                
+                <select name="name" id="name" class="campo_tipo"  placeholder="tipo de domo" value ="name">
+                   
+                    <option value="name">Tipo de Domo</option>
+                    <option value="Standard">Domo Standard</option>
+                    <option value="superior">Domo Superior</option>
+                    <option value="Suite">Suite Domo</option>
+                </select>
+                <p></p>
+                <div class="msg-error-name"></div>
+
+
+                <select name="pax" id="pax"  class="campo_contrasena" placeholder="pax">
+                  
+                    <option value="pax">cantidad de Pax</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <p></p>
+                <div class="msg-error-pax"></div>
+
+
+                <input type="text" name="price" id="price"  class="campo_contrasena" placeholder="precio" value ="<%= locals.oldValues ? oldValues.price : null %>">
+                <span><%=  locals.errors && errors.price ? errors.price.msg : ''  %></span>
+                <p></p>
+                <div class="msg-error-price"></div>
+
+
+                <input type="text" name="comment" id="comment" class="campo_tipo"  placeholder="Descripcion" value ="<% locals.oldValues ? oldValues.comment : null  %>">
+                <span><%=  locals.errors && errors.comment ? errors.comment.msg : ''  %></span>
+                <p></p>
+                <div class="msg-error-comment"></div>
+
+
+                <input type="file" name="image" id="image" class="campo_tipo">
+                <span><%=  locals.errors && errors.image ? errors.image.msg : ''  %></span>
+                <p></p>
+                <div class="msg-error-image"></div>
+              
+
+                <button type="submit"class="ingresar" value="Registrar Domo"> Registrar </button> 
+                <p></p>
+            </form >
+                <!--
+
+            <label><input type="checkbox" class="mantenerme_logueado"> Mantenerme logueado</label>
+            <section class="ingreso_alternativo">
+                <hr> <h3> o ingresar con </h3> <hr>
+            </section>
+            <section class="redes">
+                <i class="fab fa-google" class="icon_login"></i>
+                <i class="fab fa-facebook" class="icon_login"></i>
+                <i class="fab fa-linkedin" class="icon_login"></i>
+                <i class="fab fa-twitter-square" class="icon_login"></i>
+            </section>-->
+            </section>
+        
+            <section class="derecha_arriba">
+                <div class="cruz">
+                <a href="/"><i class="far fa-times-circle"></i></a>
+                </div>
+            </section>
+
+            <section class="derecho_abajo">
+                <img src="/images/weglamp-vert.png" alt="foto" class="imagen">
+            </section>
+        </div>
+
+           
+    </section>
+</body>
+</html>
